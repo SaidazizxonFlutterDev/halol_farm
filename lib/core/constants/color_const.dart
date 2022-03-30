@@ -7,4 +7,5 @@ class ColorConst {
   static Color grey = const Color(0xFFF2F1F7);
   static Color invisible = Colors.transparent;
   static Color white =  Colors.white;
+  static Color yellow = const Color(0xFFFFC61A);
 }

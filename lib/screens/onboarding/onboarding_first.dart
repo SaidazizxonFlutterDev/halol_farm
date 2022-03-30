@@ -6,11 +6,12 @@ import 'package:halol_farm/core/constants/size_config.dart';
 import 'package:halol_farm/core/constants/size_const.dart';
 import 'package:halol_farm/core/constants/weight_const.dart';
 import 'package:halol_farm/widgets/mini_dot.dart';
+import 'package:halol_farm/widgets/my_btn.dart';
 import 'package:halol_farm/widgets/my_sized_box.dart';
 import 'package:halol_farm/widgets/text/my_text.dart';
 
 class OnboardingFirst extends StatelessWidget {
- const OnboardingFirst({Key? key}) : super(key: key);
+  const OnboardingFirst({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -49,19 +50,9 @@ class OnboardingFirst extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  ElevatedButton(
-                    child: MyText("KEYINGISI"),
-                    style: ElevatedButton.styleFrom(
-                      primary: ColorConst.primary,
-                      padding: EdgeInsets.symmetric(vertical: getH(16)),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(getH(12)),
-                      ),
-                    ),
-                     onPressed: () {
-                       Navigator.pushNamed(context, '/onboarding_second');
-                     },
-                  ),
+                  MyButton("KEYINGISI",
+                      () => Navigator.pushNamed(context, '/onboarding_second'),
+                      clr: ColorConst.primary),
                 ],
               ),
             ),

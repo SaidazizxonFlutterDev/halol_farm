@@ -5,6 +5,6 @@ class SizeConst {
   static double extraSmall = 10;
   static double larger = 20;
   static double large = 24;
-  static double extraLarge = 28;
-  static double doubleExtraLarge = 32;
+  static double extraLarge = 30;
+  static double doubleExtraLarge = 36;
 }

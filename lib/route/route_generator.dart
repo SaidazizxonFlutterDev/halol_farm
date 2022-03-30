@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:halol_farm/screens/auth/sign_in_page.dart';
+import 'package:halol_farm/screens/auth/sign_up_page.dart';
 import 'package:halol_farm/screens/my_home_page.dart';
 import 'package:halol_farm/screens/onboarding/onboarding_first.dart';
 import 'package:halol_farm/screens/onboarding/onboarding_second.dart';
 import 'package:halol_farm/screens/onboarding/onboarding_third.dart';
-import 'package:halol_farm/screens/singIn_or_signUp.dart';
+import 'package:halol_farm/screens/auth/singIn_or_signUp.dart';
 import 'package:halol_farm/screens/splash_screen.dart';
 
 class RouteGenerator {
@@ -33,7 +35,17 @@ class RouteGenerator {
         );
         case '/signIn_or_singUp':
         return MaterialPageRoute(
-          builder: (_) => const SignInOrSignUp(),
+          builder: (_) =>  SignInOrSignUp(),
+        );
+
+        case '/sign_in':
+        return MaterialPageRoute(
+          builder: (_) => const SignInPage(),
+        );
+
+        case '/sign_up':
+        return MaterialPageRoute(
+          builder: (_) => const SignUpPage(),
         );
     }
   }

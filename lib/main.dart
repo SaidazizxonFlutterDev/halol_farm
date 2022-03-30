@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter DemosignIn_or_singUp',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/splash',
+      initialRoute: '/signIn_or_singUp',
       debugShowCheckedModeBanner: false,
       onGenerateRoute: (s) => RouteGenerator.generateRoute(s),
     );

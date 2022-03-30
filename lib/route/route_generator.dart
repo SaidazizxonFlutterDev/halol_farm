@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:halol_farm/screens/my_home_page.dart';
+import 'package:halol_farm/screens/onboarding/onboarding_first.dart';
+import 'package:halol_farm/screens/onboarding/onboarding_second.dart';
+import 'package:halol_farm/screens/onboarding/onboarding_third.dart';
+import 'package:halol_farm/screens/singIn_or_signUp.dart';
 import 'package:halol_farm/screens/splash_screen.dart';
 
 class RouteGenerator {
   static generateRoute(RouteSettings s) {
     var args = s.arguments;
     switch (s.name) {
-      case '/':
+      case '/home_page':
         return MaterialPageRoute(
           builder: (_) => const MyHomePage(),
         );
@@ -14,6 +18,22 @@ class RouteGenerator {
         case '/splash':
         return MaterialPageRoute(
           builder: (_) => const SplashScreen(),
+        );
+        case '/onboarding_first':
+        return MaterialPageRoute(
+          builder: (_) => const OnboardingFirst(),
+        );
+        case '/onboarding_second':
+        return MaterialPageRoute(
+          builder: (_) => const OnboardingSecond(),
+        );
+        case '/onboarding_third':
+        return MaterialPageRoute(
+          builder: (_) => const OnboardingThird(),
+        );
+        case '/signIn_or_singUp':
+        return MaterialPageRoute(
+          builder: (_) => const SignInOrSignUp(),
         );
     }
   }

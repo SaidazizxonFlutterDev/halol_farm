@@ -4,4 +4,7 @@ class AssetsConst {
   static String onboardingSecond = "assets.onboardingSecond.svg";
   static String onboardingThird = "assets/onboardingThird.svg";
   static String logo = 'assets/logo.svg';
+  static String googleLogo = 'assets/google.svg';
+  static String appleLogo = 'assets/apple.svg';
+  static String facebookLogo = 'assets/facebook.svg';
 }

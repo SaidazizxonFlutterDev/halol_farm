@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/signIn_or_singUp',
+      initialRoute: '/verif_code',
       debugShowCheckedModeBanner: false,
       onGenerateRoute: (s) => RouteGenerator.generateRoute(s),
     );

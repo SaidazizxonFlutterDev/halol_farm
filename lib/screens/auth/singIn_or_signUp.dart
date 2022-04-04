@@ -58,12 +58,12 @@ class SignInOrSignUp extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(top: getH(135), bottom: getH(35)),
                   child: MyButton("Ro'yxatdan o'tish",
-                      () => Navigator.pushNamedAndRemoveUntil(context, 'sign_up', (route) => false),
+                      () => Navigator.pushNamed(context, '/sign_up'),
                       clr: ColorConst.white, tClr: ColorConst.textColor),
                 ),
                 myTextButton(
                     "Akkauntga kirish", ColorConst.white, SizeConst.larger, () {
-                  Navigator.pushReplacementNamed(context, '/sign_in');
+                  Navigator.pushNamed(context, '/sign_in');
                 })
               ],
             ),

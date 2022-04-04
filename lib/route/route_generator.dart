@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:halol_farm/screens/auth/sign_in_page.dart';
 import 'package:halol_farm/screens/auth/sign_up_page.dart';
+import 'package:halol_farm/screens/auth/verification_page.dart';
 import 'package:halol_farm/screens/my_home_page.dart';
 import 'package:halol_farm/screens/onboarding/onboarding_first.dart';
 import 'package:halol_farm/screens/onboarding/onboarding_second.dart';
@@ -46,6 +47,11 @@ class RouteGenerator {
         case '/sign_up':
         return MaterialPageRoute(
           builder: (_) => const SignUpPage(),
+        );
+
+        case '/verif_code':
+        return MaterialPageRoute(
+          builder: (_) =>  VerificationPage(),
         );
     }
   }
